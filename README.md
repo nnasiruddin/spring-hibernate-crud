@@ -1,4 +1,4 @@
-##Sample Object
+## Sample Object
 
 ```
 
@@ -17,19 +17,19 @@
 }
 ```
 
-##Data Type Assumptions:
+## Data Type Assumptions:
 ```
 profileImage = String --> Base 64 encoded string
 birthDate = Date ---> My SQL Date yyyy-mm-dd
 ```
 
-All fields are set as required:
+## All fields are set as required:
 -Phone number has to be unique --> Set that in the DB itself
 -Email has to be unique ---> Set that in the DB itself
 
 
 
-##This is a RESTful API with the following endpoints:
+## This is a RESTful API with the following endpoints:
 ```
 1 - 
 Endpoint = {/contact/listByCity/{city}}
