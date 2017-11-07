@@ -1,5 +1,6 @@
-Sample Object
-=============
+##Sample Object
+
+```
 
 {
         "name": "John Hancock",
@@ -14,22 +15,22 @@ Sample Object
         "state": "IL",
         "zip": "60639"
 }
+```
 
-Data Type Assumptions:
-======================
-
+##Data Type Assumptions:
+```
 profileImage = String --> Base 64 encoded string
 birthDate = Date ---> My SQL Date yyyy-mm-dd
+```
 
-All fields are set as required
-Phone number has to be unique --> Set that in the DB itself
-Email has to be unique ---> Set that in the DB itself
+All fields are set as required:
+-Phone number has to be unique --> Set that in the DB itself
+-Email has to be unique ---> Set that in the DB itself
 
 
 
-This is a RESTful API with the following endpoints:
-===================================================
-
+##This is a RESTful API with the following endpoints:
+```
 1 - 
 Endpoint = {/contact/listByCity/{city}}
 RequestMethod = GET
@@ -60,6 +61,7 @@ Accepted DataType = application/json
 7 -
 Endpoint = {/contact/deleteContact/{id}}
 RequestMethod = DELETE
+```
 
 This REST Service assumes that there is a MySQL Server running with a table with the name 'contact' created. This assumes that the server is running on port 3306.
 
